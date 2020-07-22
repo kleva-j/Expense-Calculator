@@ -1,0 +1,73 @@
+.budget-item-card {
+  position: relative;
+}
+
+.x-icon-button {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background: var(--bg-entry);
+  background-image: url('../../../../assets/icons/delete_icon.svg');
+  top: -12px;
+  right: -12px;
+  text-align: center;
+  line-height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.2s ease-out, transform 0.2s ease-out;
+  opacity: 0;
+  transform: scale(0.7);
+}
+
+.budget-item-card:hover .x-icon-button {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.x-icon-button:hover {
+  transform: scale(1.2) !important;
+}
+
+.budget-item {
+  display: flex;
+  background-color: var(--light-grey);
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.2s ease-out;
+}
+
+.budget-item:hover {
+  background: var(--dark-grey);
+}
+
+.description {
+  flex-grow: 1;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.amount {
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.expense > .description > p,
+.expense > .amount > p {
+  color: var(--red);
+}
+
+.expense > .amount {
+  background: var(--bg-expense);
+}
+
+.income > .description > p,
+.income > .amount > p {
+  color: var(--green);
+}
+
+.income > .amount {
+  background: var(--light-green);
+}

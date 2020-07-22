@@ -1,0 +1,15 @@
+header {
+  background-image: linear-gradient(75deg, rgb(159, 104, 235), rgb(173, 203, 231));
+  height: 80px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+h2 {
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Nunito';
+  -webkit-user-select: none;
+}

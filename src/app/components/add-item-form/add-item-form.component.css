@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  width: 650px;
+}
+
+.amount {
+  width: 120px;
+}
+
+.add_entry {
+  flex: 1;
+  margin: 0 10px 0 20px;
+}
+
+.amount,
+.add_entry {
+  padding: 8px 14px;
+  border: 0;
+  border: 1px solid lightgrey;
+  outline: none;
+  border-radius: 3px;
+  font-size: 16px;
+  background: var(--light-grey);
+  color: var(--bg-entry);
+}
+
+button {
+  padding: 0 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: var(--purple);
+  color: white;
+  outline: none;
+}
+
+button:hover {
+  background: var(--light-purple);
+}
+
+button:disabled {
+  background: var(--lighter-purple);
+  cursor: not-allowed;
+}

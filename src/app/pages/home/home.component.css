@@ -1,0 +1,39 @@
+.container {
+
+}
+
+.total_budget {
+  background: darkslateblue;
+  height: 250px;
+  display: grid;
+  place-items: center;
+}
+
+.heading {
+  font-family: Lato;
+  font-weight: 100;
+  font-size: 58px;
+  color: white;
+}
+
+.heading.green {
+  color: var(--green);
+}
+
+.heading.red {
+  color: var(--red);
+}
+
+.add_item_section {
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.add_item_container {
+  margin: 0 10px;
+  max-width: 700px;
+  height: 70px;
+  display: grid;
+  align-items: center;
+}

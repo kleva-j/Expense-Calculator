@@ -1,0 +1,12 @@
+<article class="budget-item-card">
+  <aside class="budget-item" [ngClass]="{ 'income': isIncome, 'expense': !isIncome }">
+    <main class="description">
+      <p contenteditable (input)="handleInput($event, 'description')" (keypress)="updateAmount($event)">{{ item.description }}</p>
+    </main>
+    <main class="amount">
+      <p contenteditable="true" (input)="handleInput($event, 'amount')" (keypress)="updateAmount($event)">{{ item.amount }}</p>
+    </main>
+  </aside>
+
+  <div class="x-icon-button" (click)="onXButtonClick()"></div>
+</article>

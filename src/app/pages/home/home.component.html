@@ -1,0 +1,19 @@
+<app-header></app-header>
+<section class="container" *ngIf="list else loading">
+  <section class="total_budget">
+    <p class="heading" [ngClass]="{ 'green': balance > 0, 'red': balance < 0 }">{{ balance }}</p>
+  </section>
+
+  <section class="add_item_section">
+    <main class="add_item_container">
+      <app-add-item-form (formSubmit)="addItem($event)"></app-add-item-form>
+    </main>
+  </section>
+
+  <app-budget-item-list [budgetItems]="budgetItems" (delete)="deleteItem($event)"></app-budget-item-list>
+</section>
+
+<ng-template #loading>
+  <div class="spinner">Loading...</div>
+</ng-template>
+<app-footer></app-footer>
